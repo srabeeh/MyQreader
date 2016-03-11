@@ -16,6 +16,11 @@
 		22C95F251C92488A00586306 /* My_QReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C95F241C92488A00586306 /* My_QReaderTests.swift */; };
 		22C95F301C92488A00586306 /* My_QReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C95F2F1C92488A00586306 /* My_QReaderUITests.swift */; };
 		22C95F3E1C924AFD00586306 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C95F3D1C924AFD00586306 /* AVFoundation.framework */; };
+		22C95F461C92AD2200586306 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C95F411C92AD2200586306 /* Constants.swift */; };
+		22C95F471C92AD2200586306 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C95F421C92AD2200586306 /* CustomButton.swift */; };
+		22C95F481C92AD2200586306 /* CustomDesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C95F431C92AD2200586306 /* CustomDesignView.swift */; };
+		22C95F491C92AD2200586306 /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C95F441C92AD2200586306 /* CustomImage.swift */; };
+		22C95F4A1C92AD2200586306 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C95F451C92AD2200586306 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		22C95F2F1C92488A00586306 /* My_QReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_QReaderUITests.swift; sourceTree = "<group>"; };
 		22C95F311C92488A00586306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22C95F3D1C924AFD00586306 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		22C95F411C92AD2200586306 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		22C95F421C92AD2200586306 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		22C95F431C92AD2200586306 /* CustomDesignView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDesignView.swift; sourceTree = "<group>"; };
+		22C95F441C92AD2200586306 /* CustomImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
+		22C95F451C92AD2200586306 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +113,10 @@
 		22C95F0B1C92488A00586306 /* My QReader */ = {
 			isa = PBXGroup;
 			children = (
+				22C95F4B1C92AD8700586306 /* Controllers */,
+				22C95F401C92ACB700586306 /* Views */,
+				22C95F3F1C92ACA500586306 /* Models */,
 				22C95F0C1C92488A00586306 /* AppDelegate.swift */,
-				22C95F0E1C92488A00586306 /* ViewController.swift */,
 				22C95F101C92488A00586306 /* Main.storyboard */,
 				22C95F161C92488A00586306 /* Assets.xcassets */,
 				22C95F181C92488A00586306 /* LaunchScreen.storyboard */,
@@ -130,6 +142,33 @@
 				22C95F311C92488A00586306 /* Info.plist */,
 			);
 			path = "My QReaderUITests";
+			sourceTree = "<group>";
+		};
+		22C95F3F1C92ACA500586306 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		22C95F401C92ACB700586306 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22C95F411C92AD2200586306 /* Constants.swift */,
+				22C95F421C92AD2200586306 /* CustomButton.swift */,
+				22C95F431C92AD2200586306 /* CustomDesignView.swift */,
+				22C95F441C92AD2200586306 /* CustomImage.swift */,
+				22C95F451C92AD2200586306 /* CustomTextField.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		22C95F4B1C92AD8700586306 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				22C95F0E1C92488A00586306 /* ViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C95F491C92AD2200586306 /* CustomImage.swift in Sources */,
 				22C95F151C92488A00586306 /* My_QReader.xcdatamodeld in Sources */,
 				22C95F0F1C92488A00586306 /* ViewController.swift in Sources */,
 				22C95F0D1C92488A00586306 /* AppDelegate.swift in Sources */,
+				22C95F4A1C92AD2200586306 /* CustomTextField.swift in Sources */,
+				22C95F461C92AD2200586306 /* Constants.swift in Sources */,
+				22C95F471C92AD2200586306 /* CustomButton.swift in Sources */,
+				22C95F481C92AD2200586306 /* CustomDesignView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +539,7 @@
 				22C95F361C92488A00586306 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22C95F371C92488A00586306 /* Build configuration list for PBXNativeTarget "My QReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +548,7 @@
 				22C95F391C92488A00586306 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22C95F3A1C92488A00586306 /* Build configuration list for PBXNativeTarget "My QReaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +557,7 @@
 				22C95F3C1C92488A00586306 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
